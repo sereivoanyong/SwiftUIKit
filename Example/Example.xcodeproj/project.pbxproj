@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,9 @@
 		2D3A1E3E263C0A7300A8253C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3A1E3C263C0A7300A8253C /* Main.storyboard */; };
 		2D3A1E40263C0A7400A8253C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D3A1E3F263C0A7400A8253C /* Assets.xcassets */; };
 		2D3A1E43263C0A7400A8253C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D3A1E41263C0A7400A8253C /* LaunchScreen.storyboard */; };
+		2D3A1E4C263C0C3D00A8253C /* SwiftUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2D3A1E4B263C0C3D00A8253C /* SwiftUIKit */; };
+		2D3A1E4E263C26C100A8253C /* EmptyCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A1E4D263C26C100A8253C /* EmptyCollectionViewController.swift */; };
+		2D3A1E50263C26CB00A8253C /* EmptyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A1E4F263C26CB00A8253C /* EmptyTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,8 @@
 		2D3A1E3F263C0A7400A8253C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D3A1E42263C0A7400A8253C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D3A1E44263C0A7400A8253C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D3A1E4D263C26C100A8253C /* EmptyCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCollectionViewController.swift; sourceTree = "<group>"; };
+		2D3A1E4F263C26CB00A8253C /* EmptyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3A1E4C263C0C3D00A8253C /* SwiftUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +62,8 @@
 			children = (
 				2D3A1E36263C0A7300A8253C /* AppDelegate.swift */,
 				2D3A1E3A263C0A7300A8253C /* RootViewController.swift */,
+				2D3A1E4D263C26C100A8253C /* EmptyCollectionViewController.swift */,
+				2D3A1E4F263C26CB00A8253C /* EmptyTableViewController.swift */,
 				2D3A1E3C263C0A7300A8253C /* Main.storyboard */,
 				2D3A1E3F263C0A7400A8253C /* Assets.xcassets */,
 				2D3A1E41263C0A7400A8253C /* LaunchScreen.storyboard */,
@@ -80,6 +88,9 @@
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+				2D3A1E4B263C0C3D00A8253C /* SwiftUIKit */,
+			);
 			productName = Example;
 			productReference = 2D3A1E33263C0A7300A8253C /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -107,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 2D3A1E2A263C0A7200A8253C;
+			packageReferences = (
+				2D3A1E4A263C0C3D00A8253C /* XCRemoteSwiftPackageReference "SwiftUIKit" */,
+			);
 			productRefGroup = 2D3A1E34263C0A7300A8253C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,8 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3A1E4E263C26C100A8253C /* EmptyCollectionViewController.swift in Sources */,
 				2D3A1E3B263C0A7300A8253C /* RootViewController.swift in Sources */,
 				2D3A1E37263C0A7300A8253C /* AppDelegate.swift in Sources */,
+				2D3A1E50263C26CB00A8253C /* EmptyTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2D3A1E4A263C0C3D00A8253C /* XCRemoteSwiftPackageReference "SwiftUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sereivoanyong/SwiftUIKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2D3A1E4B263C0C3D00A8253C /* SwiftUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D3A1E4A263C0C3D00A8253C /* XCRemoteSwiftPackageReference "SwiftUIKit" */;
+			productName = SwiftUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2D3A1E2B263C0A7200A8253C /* Project object */;
 }

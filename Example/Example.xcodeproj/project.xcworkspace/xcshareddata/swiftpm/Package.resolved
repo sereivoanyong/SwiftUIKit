@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MagazineLayout",
+        "repositoryURL": "https://github.com/airbnb/MagazineLayout",
+        "state": {
+          "branch": null,
+          "revision": "3073c0f483b16bd9e069b36a259aa0720992b047",
+          "version": "1.6.4"
+        }
+      },
+      {
+        "package": "SwiftUIKit",
+        "repositoryURL": "https://github.com/sereivoanyong/SwiftUIKit",
+        "state": {
+          "branch": "master",
+          "revision": "30190e50ead396168b8bc52335ab0a6ddf63b8fd",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
