@@ -11,6 +11,7 @@ let package = Package(
 
     .library(name: "UIKitAdapter", targets: ["UIKitAdapter"]),
     .library(name: "DTPhotoViewerControllerAdapter", targets: ["DTPhotoViewerControllerAdapter"]),
+    .library(name: "FSPagerViewAdapter", targets: ["FSPagerViewAdapter"]),
 
     .library(name: "UIKitLayout", targets: ["UIKitLayout"]),
 
@@ -18,6 +19,7 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/tungvoduc/DTPhotoViewerController", from: "3.1.1"),
+    .package(url: "https://github.com/WenchaoD/FSPagerView", .branch("master")),
   ],
   targets: [
     .target(name: "SwiftUIKit", dependencies: ["UIKitAdapter", "UIKitLayout", "UIKitExtra"]),
@@ -25,6 +27,7 @@ let package = Package(
     .target(name: "UIKitAdapter"),
     .testTarget(name: "UIKitAdapterTests", dependencies: ["UIKitAdapter"]),
     .target(name: "DTPhotoViewerControllerAdapter", dependencies: ["UIKitAdapter", "DTPhotoViewerController"]),
+    .target(name: "FSPagerViewAdapter", dependencies: ["UIKitAdapter", "FSPagerView"]),
 
     .target(name: "UIKitLayout"),
 

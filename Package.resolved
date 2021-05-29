@@ -9,6 +9,15 @@
           "revision": "be2b855fc04fae5750e021c04a8f6d0d4ab18f92",
           "version": "3.1.1"
         }
+      },
+      {
+        "package": "FSPagerView",
+        "repositoryURL": "https://github.com/WenchaoD/FSPagerView",
+        "state": {
+          "branch": "master",
+          "revision": "1c2aaef6bfdfca7938e47a44c1a63fbdc5782ee7",
+          "version": null
+        }
       }
     ]
   },
