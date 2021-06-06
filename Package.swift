@@ -16,6 +16,7 @@ let package = Package(
 
     .library(name: "UIKitExtra", targets: ["UIKitExtra"]),
 
+    .library(name: "CollectionViewMagazineLayout", targets: ["CollectionViewMagazineLayout"]),
     .library(name: "CollectionViewWaterfallLayout", targets: ["CollectionViewWaterfallLayout"]),
   ],
   dependencies: [
@@ -32,6 +33,7 @@ let package = Package(
 
     .target(name: "UIKitExtra"),
 
+    .target(name: "CollectionViewMagazineLayout"),
     .target(name: "CollectionViewWaterfallLayout"),
   ]
 )
